@@ -1,0 +1,36 @@
+<div class="panel-body">
+    <div class="table-responsive">
+        <table class="table" id="tableWithSearch">
+            <thead>
+            <tr>
+                <th style="width:18%;">Name</th>
+                <th style="width:10%;">Gender</th>
+                <th style="width:7%;">Age</th>
+                <th style="width:20%;">Email</th>
+                <th style="width:45%">Incoming time</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each user}}
+                <tr>
+                    <td class="v-align-middle">
+                        {{name}}
+                    </td>
+                    <td class="v-align-middle">
+                        {{gender}}
+                    </td>
+                    <td class="v-align-middle">
+                        {{age}}
+                    </td>
+                    <td class="v-align-middle">
+                        {{email}}
+                    </td>
+                    <td class="v-align-middle">
+                        {{time}}
+                    </td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
